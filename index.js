@@ -11,7 +11,7 @@ const server = http.createServer((req, res) => {
     console.log(query);
 
 
-res.statusCode = 205;
+    res.statusCode = 205;
     res.setHeader('Content-Type', 'text/plain');
     res.end('Hello ' + query.name + '\n');
 })
